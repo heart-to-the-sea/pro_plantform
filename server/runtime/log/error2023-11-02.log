@@ -1,0 +1,340 @@
+panic error time:2023-11-02 22:46:25
+<nil>
+stacktrace from panic:goroutine 16 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:24 +0x5e
+server/pkg/logger.Recover.func1()
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:50 +0x265
+server/pkg/logger.Recover(0xc00003c400)
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:59 +0x96
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000462340, 0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x65b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000462340, {0x8e3d58?, 0xc00042a000}, 0xc00003c200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc00046f230?}, {0x8e3d58?, 0xc00042a000?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00017c1b0, {0x8e47f0, 0xc00046f1d0})
+	/usr/lib/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/lib/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2023-11-02 22:46:27
+<nil>
+stacktrace from panic:goroutine 16 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:24 +0x5e
+server/pkg/logger.Recover.func1()
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:50 +0x265
+server/pkg/logger.Recover(0xc00003c400)
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:59 +0x96
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000462340, 0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x65b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000462340, {0x8e3d58?, 0xc00042a0e0}, 0xc00003c500)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc00046f230?}, {0x8e3d58?, 0xc00042a0e0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00017c1b0, {0x8e47f0, 0xc00046f1d0})
+	/usr/lib/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/lib/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2023-11-02 22:46:28
+<nil>
+stacktrace from panic:goroutine 69 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:24 +0x5e
+server/pkg/logger.Recover.func1()
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:50 +0x265
+server/pkg/logger.Recover(0xc00022e200)
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:59 +0x96
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000462340, 0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x65b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000462340, {0x8e3d58?, 0xc0001662a0}, 0xc00022e000)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc00011c360?}, {0x8e3d58?, 0xc0001662a0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00017c5a0, {0x8e47f0, 0xc00046f1d0})
+	/usr/lib/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/lib/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2023-11-02 22:46:28
+<nil>
+stacktrace from panic:goroutine 69 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:24 +0x5e
+server/pkg/logger.Recover.func1()
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:50 +0x265
+server/pkg/logger.Recover(0xc00022e200)
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:59 +0x96
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000462340, 0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x65b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000462340, {0x8e3d58?, 0xc000166380}, 0xc00022e300)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc00011c360?}, {0x8e3d58?, 0xc000166380?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00017c5a0, {0x8e47f0, 0xc00046f1d0})
+	/usr/lib/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/lib/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2023-11-02 22:46:28
+<nil>
+stacktrace from panic:goroutine 69 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:24 +0x5e
+server/pkg/logger.Recover.func1()
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:50 +0x265
+server/pkg/logger.Recover(0xc00022e200)
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:59 +0x96
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000462340, 0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x65b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000462340, {0x8e3d58?, 0xc000166460}, 0xc00022e500)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc00011c360?}, {0x8e3d58?, 0xc000166460?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00017c5a0, {0x8e47f0, 0xc00046f1d0})
+	/usr/lib/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/lib/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2023-11-02 22:46:28
+<nil>
+stacktrace from panic:goroutine 69 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:24 +0x5e
+server/pkg/logger.Recover.func1()
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:50 +0x265
+server/pkg/logger.Recover(0xc00022e200)
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:59 +0x96
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000462340, 0xc00022e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x65b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000462340, {0x8e3d58?, 0xc000166540}, 0xc00022e700)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc00011c360?}, {0x8e3d58?, 0xc000166540?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00017c5a0, {0x8e47f0, 0xc00046f1d0})
+	/usr/lib/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/lib/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2023-11-02 22:46:46
+<nil>
+stacktrace from panic:goroutine 46 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:24 +0x5e
+server/pkg/logger.Recover.func1()
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:50 +0x265
+server/pkg/logger.Recover(0xc00047e200)
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:59 +0x96
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00047e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00047e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00047e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000462340, 0xc00047e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x65b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000462340, {0x8e3d58?, 0xc0002be000}, 0xc00047e000)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc0003ae0c0?}, {0x8e3d58?, 0xc0002be000?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000002d0, {0x8e47f0, 0xc00046f1d0})
+	/usr/lib/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/lib/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2023-11-02 22:46:46
+<nil>
+stacktrace from panic:goroutine 46 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:24 +0x5e
+server/pkg/logger.Recover.func1()
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:50 +0x265
+server/pkg/logger.Recover(0xc00003c400)
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:59 +0x96
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000462340, 0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x65b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000462340, {0x8e3d58?, 0xc00042a1c0}, 0xc00003c800)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc0003ae0c0?}, {0x8e3d58?, 0xc00042a1c0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000002d0, {0x8e47f0, 0xc00046f1d0})
+	/usr/lib/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/lib/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2023-11-02 22:46:46
+<nil>
+stacktrace from panic:goroutine 46 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:24 +0x5e
+server/pkg/logger.Recover.func1()
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:50 +0x265
+server/pkg/logger.Recover(0xc00003c400)
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:59 +0x96
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000462340, 0xc00003c400)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x65b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000462340, {0x8e3d58?, 0xc00042a2a0}, 0xc00003ca00)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc0003ae0c0?}, {0x8e3d58?, 0xc00042a2a0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000002d0, {0x8e47f0, 0xc00046f1d0})
+	/usr/lib/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/lib/go/src/net/http/server.go:3086 +0x5cb
+
+panic error time:2023-11-02 22:46:46
+<nil>
+stacktrace from panic:goroutine 46 [running]:
+runtime/debug.Stack()
+	/usr/lib/go/src/runtime/debug/stack.go:24 +0x5e
+server/pkg/logger.Recover.func1()
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:50 +0x265
+server/pkg/logger.Recover(0xc00047e200)
+	/home/xingqiankun/workspace/go_workspace/pro_plantform/server/pkg/logger/logger.go:59 +0x96
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00047e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00047e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x7a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00047e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xde
+github.com/gin-gonic/gin.(*Context).Next(...)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000462340, 0xc00047e200)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x65b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000462340, {0x8e3d58?, 0xc0002be0e0}, 0xc00047e300)
+	/home/xingqiankun/go/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xc0003ae0c0?}, {0x8e3d58?, 0xc0002be0e0?}, 0x6?)
+	/usr/lib/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0000002d0, {0x8e47f0, 0xc00046f1d0})
+	/usr/lib/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/lib/go/src/net/http/server.go:3086 +0x5cb
+
