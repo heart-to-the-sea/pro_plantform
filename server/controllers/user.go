@@ -3,6 +3,7 @@ package controllers
 import (
 	"fmt"
 	"server/pkg/logger"
+	"server/pkg/status"
 
 	"github.com/gin-gonic/gin"
 )
@@ -32,7 +33,14 @@ func (o UserController) GetLogin(c *gin.Context) {
 
 	Success(c, query)
 }
-func (o UserController) List(c *gin.Context)   {}
+func (o UserController) List(c *gin.Context) {
+	list := status.GetProcStatusList()
+	// fmt.Println("-->", list)
+	// j, _ := json.Marshal(list)
+	// logger.Write(string(j), "user")
+	// Success(c, "")
+	c.JSON(200, list)
+}
 func (o UserController) Add(c *gin.Context)    {}
 func (o UserController) Delete(c *gin.Context) {}
 

@@ -14,7 +14,7 @@ func GetRouter() *gin.Engine {
 	user := r.Group("/user")
 	{
 		user.GET("/login", controllers.UserController{}.GetLogin)
-		user.POST("/list", controllers.UserController{}.List)
+		user.GET("/list", controllers.UserController{}.List)
 		user.GET("/add", controllers.UserController{}.Add)
 		user.GET("/delete", controllers.UserController{}.Delete)
 		user.GET("/testException", controllers.UserController{}.Exception)
